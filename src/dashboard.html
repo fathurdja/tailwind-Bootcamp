@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dasboard</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="flex h-screen">
+      <aside class="w-[241px] bg-white flex flex-col items-center">
+
+        <!--Logo  -->
+        <p class="mt-6 font-extrabold text-xl">
+            <span class="text-primary">Meow</span>Cafe
+        </p>
+
+        <div class="flex flex-col justify-between h-full w-full">
+        <div>
+                <!-- atas -->
+        <section class="flex flex-col w-full mt-8 items-center">
+
+            <!-- button dashboard -->
+            <div class="relative w-full flex justify-center">
+                <div class="bg-primary h-full left-0 w-1 absolute rounded-sm"></div>
+                <button 
+                class="p-4 text-white rounded-md flex bg-primary text-sm w-4/5">
+                <i class="ri-dashboard-line mr-4"></i>
+                Dashboard
+            </button>
+            </div>
+
+         <!-- button products -->
+         <div class="relative w-full flex justify-center">
+            <button 
+            class="p-4 text-black rounded-md flex text-sm w-4/5">
+            <i class="ri-microsoft-line mr-4"></i>
+            Products
+         </button>
+        </div>
+        </section>
+
+         <!-- divider -->
+         <div class="my-4 w-full h-[1px] opacity-10 bg-black"></div>
+
+         <!-- bawah -->
+         <section class="flex flex-col w-full items-center">
+            <div class="text-left w-full">
+                <p class="ml-10 font-bold text-xs">PAGES</p>
+            </div>
+
+         <!-- button orders -->
+         <div class="relative w-full flex justify-center">
+            <button class="p-4 text-black rounded-md flex text-sm w-4/5">
+            <i class="ri-clipboard-line mr-4"></i>
+            Orders
+            </button>
+         </div>
+        </section>
+        </div>
+
+            <!-- logout -->
+            <div class="relative w-full flex justify-center">
+            <button class="p-4 text-black rounded-md flex text-sm w-4/5">
+            <i class="ri-logout-circle-line mr-4"></i>
+            Logout
+            </button>
+            </div>
+        </div>
+      </aside>
+
+      <!-- navbar -->
+      <div class="flex flex-col flex-grow">
+      <nav class="bg-white h-16 flex-grow px-8 flex py-4 items-center justify-between">
+        <!-- seacrh -->
+        <input 
+        type="text" 
+        class="bg-[#F5F6FA] rounded-2xl">
+        <div class="flex gap-5 items-center">
+            <!-- <div class="rounded-full"> -->
+                <img 
+                src="./assets/avatar.png" 
+                class="rounded-full w-fit h-fit bg-[#D8D8D8]" 
+                alt="profile">
+                <div>
+                    <p class="font-bold text-sm">Moni Roy</p>
+                    <p class="font-semibold text-xs">Admin</p>
+                </div>
+            <!-- </div> -->
+        </div>
+      </nav>
+      <main class="bg-[#F5F6FA] h-full w-full p-8">
+            <p class="font-bold text-3xl">Dashboard</p>
+            <div class="flex gap-7">
+                <!-- card -->
+                <!-- drink -->
+                <div class="mt-7 bg-white flex-grow p-4 h-[161px] rounded-2xl flex flex-col justify-between">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Total Drink</p>
+                        <i class="ri-group-line py-3 px-4 bg-[#8280FF]/30 rounded-2xl text-[#3D42DF]"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <i class="ri-line-chart-line text-2xl"></i>
+                        <p class="font-bold text-3xl">26</p>
+                    </div>
+                </div>
+                <!-- food -->
+                <div class="mt-7 bg-white flex-grow p-4 h-[161px] rounded-2xl flex flex-col justify-between">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Total Food</p>
+                        <i class="ri-line-chart-line py-3 px-4 bg-[#4AD991]/30 rounded-2xl text-[#4AD991]"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <i class="ri-line-chart-line text-2xl"></i>
+                        <p class="font-bold text-3xl">10</p>
+                    </div>
+                </div>
+                <!-- order -->
+                <div class="mt-7 bg-white flex-grow p-4 h-[161px] rounded-2xl flex flex-col justify-between">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Total Order</p>
+                        <i class="ri-instance-line py-3 px-4 bg-[#FEC53D]/30 rounded-2xl text-[#FEC53D]"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <i class="ri-line-chart-line text-2xl"></i>
+                        <p class="font-bold text-3xl">10293</p>
+                    </div>
+                </div>
+                <!-- income -->
+                <div class="mt-7 bg-white flex-grow p-4 h-[161px] rounded-2xl flex flex-col justify-between">
+                    <div class="flex justify-between">
+                        <p class="font-semibold">Total Income</p>
+                        <i class="ri-history-line py-3 px-4 bg-[#FF9066]/30 rounded-2xl text-[#FF9066]"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <i class="ri-line-chart-line text-2xl"></i>
+                        <p class="font-bold text-3xl">Rp.200.040</p>
+                    </div>
+                </div>
+            </div>
+      </main>
+    </div>
+    </div>
+  </body>
+</html>
